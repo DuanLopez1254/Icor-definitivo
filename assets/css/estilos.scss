@@ -1,0 +1,416 @@
+
+$negro: #111111;
+$blanco: #FEFEFE;
+$navBlanco: rgba(255, 255, 255, 0.603);
+$navNegro: rgba(0, 0, 0, 0.603);
+$grisOscuro: #222222;
+$grisMedio: rgb(97, 97, 97);
+$grisClaro: #C8C8C8;
+$grisClaroHover: #ACABAB;
+$azulOscuro: rgb(25, 46, 131);
+$naranja: #dd8511;
+$naranjaMedio: rgb(218, 84, 23);
+$naranjaOscuro: rgb(173, 63, 0);
+$naranjaFooter: rgb(146, 54, 0);
+$naranjaHover: #e46917;
+$verdeOscuro: #19750d;
+$amarilloOcuro: #ad7600;
+$Rojo: #ff0606;
+$RojoOsccuro:  #800000;
+$sombraDark: 10px 10px 20px rgba(196, 194, 194, 0.16);
+$sombraLight: 10px 10px 20px rgba(0,0,0,.16);
+$sombranaranja: #ff660085;
+$sombranaranjaO: rgba(134, 59, 9, 0.568);
+
+body{
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+//poner gris fondo, letras blancas
+.gd{
+	background-color: $blanco;
+	backdrop-filter: blur(10px);
+	box-shadow:  $sombraDark;
+	transition: .3s ease all;
+
+	body.dark & {
+		background: $grisOscuro;
+		box-shadow: 5px 5px 5px 5px $sombraLight;
+		color: $blanco;
+
+		span{
+			color: $blanco;
+		}
+	}
+}
+
+//ir arriba boton
+
+.ir-arriba{
+	backdrop-filter: blur(10px);
+	background: $sombranaranja;
+	transition: .3s ease all;
+	body.dark & {
+		background: $sombranaranjaO;
+		box-shadow: 5px 5px 5px 5px $sombraLight;
+	}
+}
+
+//poner fondo gris claro letras blancas
+
+.eu{
+	background-color: $blanco;
+	box-shadow:  $sombraDark;
+	transition: .2s ease all;
+
+	body.dark & {
+		background: $grisMedio;
+		box-shadow:  $sombraLight;
+		color: $blanco;
+	}
+}
+
+//poner fondo negro y letras blancas.
+.gh{
+	background-color: $blanco;
+	transition: .3s ease all;
+
+	body.dark & {
+		background: $negro;
+		color: $blanco;
+	}
+}
+
+
+
+.cs{
+	background-color: $navBlanco;
+	body.dark & {
+		background: $navNegro;
+		a{
+		color: $blanco;
+		}
+	}
+}
+
+body {
+	background: #F1F1F1;
+	transition: .3s ease all;
+
+	&.dark{
+		background: $negro;
+	}
+}
+
+.nav-item{
+	color: $negro;
+	body.dark &
+	{
+	    color:$blanco;
+		&.active 
+		{
+		 background-color: $grisOscuro !important;
+		 color: $blanco;
+        }
+	}
+}
+
+
+.switch{
+	transition: .3s ease all;
+	background: linear-gradient(90deg, $naranjaMedio, $naranjaFooter);
+	border-radius: 5px;
+	border: none;
+	border:0;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+	
+	&.active{
+		background: linear-gradient(90deg, $naranja, $naranjaMedio);
+		color: #000;
+		&::after{
+			right: 0;
+			left: unset;
+		}
+	}
+	span{
+		max-width: 60px;
+		min-width: 40px;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		display: block;
+		background: none;
+		color: #fff;
+		margin: 4px;
+	}
+}
+
+.switch1{
+	transition: .3s ease all;
+	background: $naranja;
+	border-radius: 5px;
+	border: none;
+	border:0;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	padding: 8px;
+	transition: .3s;
+	body.dark &{
+		background: $naranjaOscuro;
+	}
+}
+	
+
+.card{
+	background-color: $blanco;
+	transition: .3s ease all;
+
+	body.dark & {
+		background: $grisOscuro;
+		box-shadow: $sombraLight;
+		color: $blanco;
+	}
+}
+
+.algo{
+     background-image: linear-gradient(90deg, $naranja, $naranjaMedio);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     position: relative;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+	 opacity: 0.9;
+	 color: $blanco;
+      span{
+          backdrop-filter: blur(10px);
+        }
+		:hover{
+		 
+			opacity: 1;
+        }
+	   body.dark & {
+		background-image: linear-gradient(90deg, $naranjaMedio, $naranjaFooter);
+		box-shadow: $sombraLight;
+		color: $blanco;
+	    }
+}
+.df{
+	transition: .3s ease all;
+	body.dark & {
+		color: $blanco;
+	}
+}
+.fd{
+	transition: .3s ease all;
+	body.dark & {
+		color: $blanco;
+	}
+}
+
+.lok:nth-of-type(1):after{
+	transition: .3s ease all;
+	body.dark & {
+		background: rgba(43, 42, 42, 0.6);
+	}
+ }
+ .texto{
+	color: $negro;
+	transition: .3s ease all;
+	body.dark & {
+		color: $grisClaro  !important;
+	}
+ }
+ .th{
+	body.dark & {
+		transition: .3s ease all;
+		border-color: $grisClaro;
+		color: $grisClaro;
+		&:hover {
+			background: $grisClaro;
+			color: $negro;
+		}
+	}
+}
+
+//boton color primary dark
+
+.btn-primary{
+	transition: .3s ease all;
+	body.dark & {
+		background: $azulOscuro;
+		border: $azulOscuro;
+		padding-right: 13px;
+		padding-left: 13px;
+		padding-bottom: 9px;
+		padding-top: 9px;
+	}
+}
+
+//boton color primary dark
+
+.btn-danger{
+	transition: .3s ease all;
+	body.dark & {
+		background: $RojoOsccuro;
+		border: $RojoOsccuro;
+		padding-right: 13px;
+		padding-left: 13px;
+		padding-bottom: 9px;
+		padding-top: 9px;
+	}
+}
+
+
+//boton color success dark
+
+.btn-success{
+	transition: .3s ease all;
+	body.dark & {
+		background: $verdeOscuro;
+		border: $verdeOscuro;
+		padding-left: 13px;
+		padding-right: 13px;
+		padding-bottom: 10px;
+	}
+}
+
+//boton color warning dark
+
+.btn-warning{
+	transition: .3s ease all;
+	body.dark & {
+		background: $amarilloOcuro;
+		border: $amarilloOcuro;
+	
+	}
+}
+
+//boton color dark dark
+
+.btn-dark{
+	transition: .3s ease all;
+	body.dark & {
+		background: $grisMedio;
+		border: $grisMedio;
+		padding-left: 13px;
+		padding-right: 13px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+}
+
+.btn-link{
+	 transition: .3s ease all;
+	 span{
+		 color:$negro;
+	 }
+	body.dark & {
+		span{
+			color:$blanco;
+		}
+	}
+}
+
+.lok:nth-of-type(1) {
+	background-image:url("../images/fondo4.jpg");
+	filter: contrast(300%);
+	filter: saturate(200%);
+	body.dark &{
+		filter: contrast(200%);
+		filter: saturate(100%);
+	}
+ }
+
+ .separador {
+	background-image: url('../images/bg-separator.jpeg');
+	body.dark & {
+		filter: contrast(200%);
+		filter: saturate(100%);	
+	}
+}
+
+.modal{
+	backdrop-filter: blur(10px);
+}
+
+/* Scrooll Personalizado */
+
+body::-webkit-scrollbar{
+	transition: .3s ease all;
+	width: 8.5px;
+	background: rgba(201, 93, 43, 0.363);
+
+}
+
+body::-webkit-scrollbar-thumb{
+	background: rgba(201, 93, 22, 0.568);
+	border-radius: 8.5px;
+}
+
+/*Colores barra social */
+
+.icon-facebook {
+	transition: .3s ease all;
+	background: #2E406E;
+	body.dark & {
+		background: rgb(19, 32, 68);
+	}
+}
+
+.icon-twitter {
+	transition: .3s ease all;
+	background: #339DC5;
+	body.dark & {
+		background: rgb(19, 100, 129);
+	}
+}
+
+.icon-youtube {
+	transition: .3s ease all;
+	background: #E83028;
+	body.dark & {
+		background: rgb(155, 22, 15);
+	}
+}
+
+.icon-instagram {
+	transition: .3s ease all;
+	background: #3F60A5;
+	body.dark & {
+		background: rgb(29, 64, 139);
+	}
+}
+
+.modal-body::-webkit-scrollbar{
+	transition: .3s ease all;
+	width: 8.5px;
+	background: rgba(201, 93, 43, 0.363);
+
+}
+
+.modal-body::-webkit-scrollbar-thumb{
+	background: rgba(201, 93, 22, 0.568);
+	border-radius: 8.5px;
+}
+
+.dropdown-menu{
+	align-items: center;
+	padding: 10px;
+	align-self: center;
+	a{
+		margin-top:3px;
+		margin-bottom: 3px;
+	}
+	body.dark & {
+		background: $grisOscuro;
+	}
+}

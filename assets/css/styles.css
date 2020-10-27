@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Lexend Deca', sans-serif;
+}
+*{
+  font-family: 'Lexend Deca', sans-serif; 
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+@media only screen and (min-width:767px) {
+  .clientes-caro{
+      display: none;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .clientes{
+      display: none;
+  }
+}
+
+@media only screen and (min-width:575px) {
+  .texco{
+      display: none;
+  }
+}
+
+@media only screen and (max-width:575px) {
+  .texre{
+      display: none;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .alg{
+      display: none;
+  }
+  .alge{
+      display: block;
+  }
+}
+@media only screen and (min-width:400px) {
+  .alge{
+      display: none;
+  }
+}
+
+.cls{
+background-color: white;
+transition: all 1s ease;
+color: white;
+}
+
+.fd{
+  background-image:url("../images/fondo-t.png") ;
+  -webkit-background-clip: text;
+  color: transparent;  
+}
+
+.navbar{
+   transition: all 0.5s ease;
+}
+
+.navbar{
+   transition: all 0.5s ease;
+}
+.lok{
+  position: relative;
+}
+.lok > * {
+ position: relative;
+ z-index: 2;
+}
+.lok:nth-of-type(1) {
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+.lok:nth-of-type(1):after{
+ content:'';
+ position: absolute;
+ left: 0; top:0;
+ width: 100%; height:100%;
+ background: rgba(255, 255, 255, 0.6);
+ z-index: 1;
+
+}
+
+.ls{
+   height:260px;
+   overflow: hidden;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   transition:all .5s ease-in-out;
+}
+.ls:hover .imagen{
+   -webkit-transform:scale(1.3);transform:scale(1.3);
+   transition:all .5s ease-in-out;
+}
+
+.separador {
+width: 100%;
+height: 250px;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+.separador p {
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+padding: 10px;
+}
+@media only screen and (min-width:576px) {
+  .hgf{
+      height:100%;
+  }
+}
+@media only screen and (max-width:767px) {
+  .ef{
+      display: none;
+  }
+}
+.ir-arriba {
+display:none;
+padding:10px;
+background:white;
+font-size:20px;
+color:#fff;
+cursor:pointer;
+position: fixed;
+bottom:20px;
+  right:20px;
+  border-radius: 1rem 1rem 1rem 1rem;
+  z-index: 100; 
+}
+
+.df{
+  background-image:  url("../images/fondo-t.png") ;
+  -webkit-background-clip: text;
+  color: transparent;  
+}
+.qwe{
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.ki{
+  border-radius: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-width: 2px;
+}
+.lk{
+  height: 200px;
+}
+.if{
+border-left: 1px solid #000;
+animation: escribir 2.7s steps(18) infinite alternate;
+}
+
+.hs:before{
+content: '';
+animation: animate infinite 6s;
+}
+@keyframes animate
+{
+10%{
+    content: ' un excelente personal'
+}
+33%{
+    content: '';
+}
+43%{
+    content: ' una increible calidad';
+}
+66%{
+    content: '';
+}
+76%{
+    content: ' un buen servicio';
+}
+}
+html {
+font-size: 16px;
+}
+
+.uf:hover .um{
+  -webkit-transform:scale(1.5);transform:scale(1.5);
+  transition: 1.5s;
+}
+.uf{
+  overflow:hidden;
+}
+
+
+@media only screen and (max-width: 780px) {
+  .lh {
+    background-color: lightblue;
+    width: 0px;
+    overflow: hidden;
+  }
+}
+.social-bar {
+position: fixed;
+left: 0;
+top: 40%;
+font-size: 1.5rem;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+z-index: 100;
+}
+
+.icon {
+color: white;
+text-decoration: none;
+padding: .7rem;
+
+transition: all .5s;
+}
+
+
+.icon:first-child {
+border-radius: 0 1rem 0 0;
+}
+
+.icon:last-child {
+border-radius: 0 0 1rem 0;
+}
+
+.icon:hover {
+padding-left: -3rem;
+border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+  text-decoration: none;
+  color: white;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "";
+}
+.icon-instagram:before {
+  content: "";
+}
+.icon-twitter:before {
+  content: "";
+}
+.icon-youtube:before {
+  content: "";
+}
+.blur{
+  backdrop-filter: blur(10px);
+}
+
+
+
+@media only screen and (min-width:767px) {
+  .nosotros{
+      min-height:310px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .nosotros{
+      min-height:500px;
+  }
+}
+  

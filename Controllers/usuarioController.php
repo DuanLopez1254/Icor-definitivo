@@ -38,9 +38,15 @@ class usuarioController extends usuario{
         require_once 'views/layouts/footer.php';
     }
     public function factura(){
-        require_once 'views/layouts/header.php';
-        require_once 'views/cliente/factura.php';
-        require_once 'views/layouts/footer.php';
+        if($_SESSION['login']->Id_cargo == 4){
+            require_once 'views/layouts/header.php';
+            require_once 'views/cliente/factura.php';
+            require_once 'views/layouts/footer.php';
+        }else  {
+            require_once 'views/layouts/header.php';
+            require_once 'views/Error404/index.php';
+            require_once 'views/layouts/footer.php';
+        } 
     }
 
     //'Validaciones e interaccion model

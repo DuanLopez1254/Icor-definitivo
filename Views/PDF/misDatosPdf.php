@@ -8,19 +8,14 @@ $conexion=mysqli_connect('localhost','root','','icor');
 $sql1="SELECT * from cod_fac";
 $result1=mysqli_query($conexion,$sql1);
 $mostrar1=mysqli_fetch_array($result1);
-
 $factura=$mostrar1['Cod'];
-
 $conexion=mysqli_connect('localhost','root','','icor');
-
     $sql="SELECT * from factura where fac = '$factura'";
     $result=mysqli_query($conexion,$sql);
-
     while($mostrar=mysqli_fetch_array($result)){
-
 ?>
 <div class="container mt-5 gh">
-<span class=""><img src="../../assets/images/icono.png" width="40px" class="rounded mr-2" alt="..."></span>
+<span class=""><img src="../../assets/images/icono.png" width="40px" class="rounded mr-2" alt="..."> Promotion Factory S.A</span>
 <div class="mt-3"><br>
 <p class="h3 mb-5 mt-3"><b>Factura:</b> <?php echo $mostrar['fac'] ?></p>
 </div>
@@ -32,14 +27,12 @@ $conexion=mysqli_connect('localhost','root','','icor');
 <div class="table-responsive">
 <table class="table border gh">
 <div class="text-left mb-4">
-
-
 </div>
 <?php $doc=$mostrar['Documento']; $fac=$mostrar['fac'];?>
   <thead class="thead-dark">
     <tr>
+      <th scope="col">Producto</th>
       <th scope="col">Cantidad</th>
-      <th scope="col">Nombre</th>
       <th scope="col">Precio unitario</th>
       <th scope="col">Precio total</th>
     </tr>
@@ -53,8 +46,8 @@ $conexion=mysqli_connect('localhost','root','','icor');
     while($mostrar3=mysqli_fetch_array($result3)){
      ?>
     <tr>
+     <td><?php echo $mostrar3['Nombre'] ?></td>
       <th scope="row"><?php echo $mostrar3['Cantidad'] ?></th>
-      <td><?php echo $mostrar3['Nombre'] ?></td>
       <td>$<?php echo number_format($mostrar3['Precio_u'], 0, '.', '.');?></td>
       <td>$<?php echo number_format($mostrar3['Precio_t'], 0, '.', '.'); ?></td>
     </tr>

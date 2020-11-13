@@ -8,7 +8,7 @@ class ventasController extends ventas{
 //        die('hola');
     }
     public function index(){                
-        if($_SESSION['login']->Id_cargo == 2){
+        if($_SESSION['login']->Id_cargo == 2 OR 1){
             require_once 'views/layouts/header.php';
             require_once 'views/ventas/index.php';
             require_once 'views/layouts/footer.php';

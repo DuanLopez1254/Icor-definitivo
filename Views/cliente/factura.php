@@ -7,15 +7,11 @@ $conexion=mysqli_connect('localhost','root','','icor');
 <p class="display-4 mb-5 mt-3"><b>Mis facturas</b></p>
 </div>
 <?php
-$conexion=mysqli_connect('localhost','root','','icor');
 $id=$_SESSION['login']->documento;
     $sql="SELECT * from factura where documento = '$id'";
     $result=mysqli_query($conexion,$sql);
-
     while($mostrar=mysqli_fetch_array($result)){
      ?>
-
-
 </div>
 <br>
 <div class="container text-center shadow p-3 mb-5 gh rounded">
@@ -26,7 +22,7 @@ $id=$_SESSION['login']->documento;
 <div class="form-group" style="display:none;"><br>
     <input type="hidden" name="fac" value="<?php echo $mostrar['fac'] ?>">
   </div><br>
-  <button type="submit"  name="datfac" class="btn btn-primary mb-4">Crear PDF</button>
+  <button type="submit"  name="datfac" class="btn btn-primary mb-4">Descargar</button>
 </form>
 <p class="h3">Codigo: <?php echo $mostrar['fac'] ?></p><br>
 <p class="h3 text-muted"><?php echo $mostrar['Nombre_cli'] ?> <?php echo $mostrar['Apellido_cli'] ?></p>
@@ -43,15 +39,14 @@ $id=$_SESSION['login']->documento;
   </thead>
   <tbody>
   <?php
-  $conexion=mysqli_connect('localhost','root','','icor');
     $sql="SELECT * from productos_fac where fac = '$fac'";
     $result3=mysqli_query($conexion,$sql);
 
     while($mostrar3=mysqli_fetch_array($result3)){
      ?>
-    <tr>
-      <th scope="row"><?php echo $mostrar3['Cantidad'] ?></th>
+    <tr>    
       <td><?php echo $mostrar3['Nombre'] ?></td>
+      <th scope="row"><?php echo $mostrar3['Cantidad'] ?></th>
       <td>$<?php echo number_format($mostrar3['Precio_u'], 0, '.', '.');?></td>
       <td>$<?php echo number_format($mostrar3['Precio_t'], 0, '.', '.'); ?></td>
     </tr>

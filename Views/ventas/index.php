@@ -18,11 +18,11 @@ $conexion=mysqli_connect('localhost','root','','icor');
 <div class="form-group" style="display:none;"><br>
     <input type="hidden" name="fac" value="<?php echo $mostrar['fac'] ?>">
   </div><br>
-  <button type="submit"  name="datfac" class="btn btn-primary mb-4">Crear PDF</button>
+  <button type="submit"  name="datfac" class="btn btn-primary mb-4">Descargar en PDF</button>
 </form>
 <p class="h3">Codigo: <?php echo $mostrar['fac'] ?></p><br>
-<p class="h3 text-muted"><?php echo $mostrar['Nombre_cli'] ?> <?php echo $mostrar['Apellido_cli'] ?></p>
-<p class="h3 text-muted "><?php echo $mostrar['Documento'] ?></p>
+<p class="h3 text-muted">Nombre: <?php echo $mostrar['Nombre_cli'] ?> <?php echo $mostrar['Apellido_cli'] ?></p>
+<p class="h3 text-muted ">Documento: C.C.<?php echo $mostrar['Documento'] ?></p>
 </div>
 <?php $doc=$mostrar['Documento']; $fac=$mostrar['fac'];?>
   <thead class="thead-dark">

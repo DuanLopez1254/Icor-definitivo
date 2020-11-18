@@ -1,5 +1,8 @@
 <div class="mt-5 mb-4 ">
-<div class="text-center mt-5 gh">
+<div class="p-5 mt-5 mb-4 gh">
+<a href="?controller=empleado&method=PDFS"  role="button"><button type="button" class="btn btn-primary btn-lg flex align-left"   data-target="#exampleModal">Descargar</button></a>
+<div class=" text-center mt-5">
+<div class="mt-5">
 
 <br>
 <br>

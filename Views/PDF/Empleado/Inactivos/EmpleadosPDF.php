@@ -1,20 +1,15 @@
 <?php
 // Cargamos la librería dompdf que hemos instalado en la carpeta dompdf
-require_once '../../assets/dompdf/autoload.inc.php';
+require_once '../../../../assets/dompdf/autoload.inc.php';
 use Dompdf\Dompdf;
 
 // Introducimos HTML de prueba
-
-
-
- $html=file_get_contents_curl("http://localhost:8082/Icor-definitivo/views/PDF/misDatosPdf.php");
- if($html){
-	 echo"si";
- }else{
-	 echo"no";
- }
-
-
+$html=file_get_contents_curl("http://localhost:8082/Icor-definitivo/views/PDF/Empleado/Inactivos/EmpleadoPdf.php");
+if($html){
+   echo"si";
+}else{
+   echo"no";
+}
  
 // Instanciamos un objeto de la clase DOMPDF.
 $pdf = new DOMPDF();
@@ -30,7 +25,7 @@ $pdf->load_html(utf8_decode($html));
 $pdf->render();
  
 // Enviamos el fichero PDF al navegador.
-$pdf->stream('Factura.pdf');
+$pdf->stream('Empleados.pdf');
 
 
 function file_get_contents_curl($url) {

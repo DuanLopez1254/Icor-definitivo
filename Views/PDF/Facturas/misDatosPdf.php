@@ -9,7 +9,6 @@ $sql1="SELECT * from cod_fac";
 $result1=mysqli_query($conexion,$sql1);
 $mostrar1=mysqli_fetch_array($result1);
 $factura=$mostrar1['Cod'];
-$conexion=mysqli_connect('localhost','root','','icor');
     $sql="SELECT * from factura where fac = '$factura'";
     $result=mysqli_query($conexion,$sql);
     while($mostrar=mysqli_fetch_array($result)){

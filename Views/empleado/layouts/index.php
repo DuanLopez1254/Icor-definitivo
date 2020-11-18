@@ -2,9 +2,9 @@
 
 <div class="p-5 mt-5 mb-4 gh">
 <button type="button" class="btn btn-success btn-lg flex align-left"  data-toggle="modal" data-target="#exampleModal">Crear</button>
+<a href="?controller=empleado&method=PDF"  role="button"><button type="button" class="btn btn-primary btn-lg flex align-left"   data-target="#exampleModal">Descargar</button></a>
 <div class=" text-center mt-5">
 <div class="mt-5">
-
 </div>
 
 <br>

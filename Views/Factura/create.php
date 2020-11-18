@@ -1,26 +1,19 @@
 <?php
 $conexion=mysqli_connect('localhost','root','','icor');
-
 ?>
 <div class="container mt-5 gh">
 <div class="mt-3"><br>
 <p class="display-4 mb-5 mt-3"><b>Factura</b></p>
 </div>
 <?php
-$Codigos=$_SESSION['Codigo_fac'];
-
-$total=0;
+    $Codigos=$_SESSION['Codigo_fac'];
+    $total=0;
     $sql="SELECT * from factura where fac = '$Codigos'";
-    
-    
-
     $result=mysqli_query($conexion,$sql);
-
     while( $mostrar=mysqli_fetch_array($result)){
-     ?>
-
+?>
 <div class= "text-left">
-<p>codigo: <?= $Codigos ?></p>
+<p>Codigo: <?= $Codigos ?></p>
 <p class="h3 text-muted">
 Nombre: <?php echo $mostrar['Nombre_cli'] ?> 
 <?php echo $mostrar['Apellido_cli'] ?></p>

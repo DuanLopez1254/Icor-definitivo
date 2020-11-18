@@ -106,26 +106,10 @@ class empleadoController extends empleado{
             require_once 'views/layouts/footer.php';
         } 
     }
-
-    //Validaciones e interaccion model
-    public function update(){
-        echo parent::update_register($_POST) ? header('location:?controller=empleado') : 'Error ';
+    public function PDF(){         
+        header('Location: views/pdf/Empleado/Activos/EmpleadosPDF.php');  
     }
-    public function updates(){
-        echo parent::update_register($_POST) ? header('location:?controller=empleado&method=vista') : 'Error ';
+    public function PDFS(){         
+        header('Location: views/pdf/Empleado/Inactivos/EmpleadosPDF.php');  
     }
-    public function liqui(){
-        echo parent::update_registers($_POST) ? header('location:?controller=empleado&method=vista') : 'Error ';
-    }
-    public function liquis(){
-        echo parent::update_registers($_POST) ? header('location:?controller=empleado') : 'Error ';
-    }
-
-
-    //
-    //public function delete(){
-       // echo parent::delete_register($_GET) ? header('location: ?controller=empleado') : 'Error al borrar la publicacion';
-
-    //}
-
 }

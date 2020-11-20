@@ -14,7 +14,7 @@ $factura=$mostrar1['Cod'];
     while($mostrar=mysqli_fetch_array($result)){
 ?>
 <div class="container mt-5 gh">
-<span class=""><img src="../../assets/images/icono.png" width="40px" class="rounded mr-2" alt="..."> Promotion Factory S.A</span>
+<span class=""><img src="../../../assets/images/icono.png" width="40px" class="rounded mr-2" alt="..."> Promotion Factory S.A</span>
 <div class="mt-3"><br>
 <p class="h3 mb-5 mt-3"><b>Factura:</b> <?php echo $mostrar['fac'] ?></p>
 </div>

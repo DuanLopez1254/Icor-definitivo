@@ -1,7 +1,5 @@
 <?php
-//Herencia
 class inventario extends Database{
-
     public function all(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM inventario where id_esta =1");
@@ -33,7 +31,6 @@ class inventario extends Database{
            die("Location:?controller=inventario" . $e->getMessage());
         }
     }
-
     public function find($Id_inve){
         try{
             $result = parent::connect()->prepare("SELECT * FROM inventario WHERE Id_inve = ?");
@@ -44,7 +41,6 @@ class inventario extends Database{
             die($e->getMessage());
         }
     }
-
     public function update_register($data){
         try{
             $result = parent::connect()->prepare("UPDATE inventario SET Nombre = ?, Cantidad = ?, Fecha = ?, Ubicacion = ?, observacion=? WHERE Id_inve = ?");
@@ -84,4 +80,3 @@ class inventario extends Database{
         }
     }
 }
-

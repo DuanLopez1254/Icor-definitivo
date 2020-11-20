@@ -1,7 +1,5 @@
 <?php
-//Herencia
 class cliente extends Database{
-
     public function all(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM productos");
@@ -11,7 +9,4 @@ class cliente extends Database{
             die($e->getMessage());
         }
     }
-
-
 }
-

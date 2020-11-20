@@ -13,5 +13,4 @@
   </div> 
     <label for="exampleInputPassword1">Ciudad</label>
     <input type="name" name="Ciudad" id="Ciudad"   class="form-control" value="<?= $contactanos->Ciudad ?>">
-  </div>
-      
+  </div>    

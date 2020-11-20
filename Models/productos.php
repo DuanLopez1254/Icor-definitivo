@@ -1,7 +1,5 @@
 <?php
-//Herencia
 class productos extends Database{
-
     public function all(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM producto where id_esta = 1");
@@ -11,7 +9,6 @@ class productos extends Database{
             die($e->getMessage());
         }
     }
-
     public function alls(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM producto where id_esta = 2");
@@ -21,7 +18,6 @@ class productos extends Database{
             die($e->getMessage());
         }
     }
-
     public function register($data){
         try{
             $result = parent::connect()->prepare("INSERT INTO producto (Nombre,Cantidad,Ubicacion,Id_pro,imagen,precio) VALUES (?,?,?,?,?,?)");
@@ -36,7 +32,6 @@ class productos extends Database{
            die("Location:?controller=producto" . $e->getMessage());
         }
     }
-
     public function find($Id_prod){
         try{
             $result = parent::connect()->prepare("SELECT * FROM producto WHERE Id_prod = ?");
@@ -47,7 +42,6 @@ class productos extends Database{
             die($e->getMessage());
         }
     }
-
     public function update_register($data){
         try{
             $result = parent::connect()->prepare("UPDATE producto SET Nombre = ?, Cantidad = ?, Ubicacion = ?, Id_pro = ?, observacion=? WHERE Id_prod = ?");
@@ -87,4 +81,3 @@ class productos extends Database{
         }
     }
 }
-

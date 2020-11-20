@@ -1,14 +1,11 @@
 <?php if($_SESSION['login']->Id_cargo == 4){ ?>
-
 <div class="lok pt-5 pb-5">
 <div class="container text-center pt-5 pb-2">
 <div class="fd">
 <p  class="display-4 mt-5 mb-5" style="font-family: 'Lexend Deca', sans-serif;"><?= $_SESSION['login']->nombre?> <?= $_SESSION['login']->apellidos?>
 <p>
 <?php
-
 $cargo=$_SESSION['login']->Id_cargo;
-
 if($cargo==1){
   echo'ADMINISTRADOR';
 } else if($cargo==2){
@@ -16,7 +13,6 @@ if($cargo==1){
 }else if($cargo==4){
   echo'CLIENTE';
 }
-
 ?>
 </p>
 </p>
@@ -27,7 +23,6 @@ if($cargo==1){
 </div>
 </div>
 </div><br><br><br>
-
 <div class="container text-center gh">
 <div class="row gh">
 <div class="col-md-4">
@@ -70,8 +65,6 @@ if($cargo==1){
 </div>
 </div>
 </div>
-
-
 <div class="container text-center gh">
 <div class="row gh">
 
@@ -88,10 +81,6 @@ if($cargo==1){
                     </div> 
     </div>
     </div>
-
-
-
-
 <div class="col-md-4">
 <div class="card-body">
         <div class="card-img">
@@ -104,10 +93,6 @@ if($cargo==1){
 
     </div>
    </div>
-
-
-
-
 <div class="col-md-4">
 <div class="card-body">
         <div class="card-img">
@@ -119,17 +104,12 @@ if($cargo==1){
                         Productos: Carpetas plásticas, PATMAUSES, fundas porta documentos, billeteras, cartucheras señalización interna, estuches en crear y muchos más.
                             <br>
                     </div> 
-                
     </div>
     </div>
 </div>
-
 </div>
 </div>
 </div>
 </div>
-
-
 <?php } ?>
-
 <br><br>

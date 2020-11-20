@@ -5,4 +5,3 @@
       </div>
       <div class="modal-body">
       <form  action="?controller=inventario&method=updates" method="POST" enctype="multipart/form-data">
-

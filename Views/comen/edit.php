@@ -2,7 +2,6 @@
     <div class="modal-content">
       <div class="modal-header">
        <center><h5 class="modal-title" id="exampleModalLabel">Responder</h5><center>
-
       </div>
       <div class="modal-body">
       <form  action="?controller=comen&method=update" method="POST" >
@@ -27,5 +26,4 @@
       </div>
     </div>
   </div>
-
 <br><br><br><br><br><br>

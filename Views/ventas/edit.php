@@ -2,7 +2,6 @@
     <div class="modal-content">
       <div class="modal-header">
        <center><h5 class="modal-title" id="exampleModalLabel">Editar Factura</h5><center>
-
       </div>
       <div class="modal-body">
       <form  action="?controller=ventas&method=update" method="POST" enctype="multipart/form-data">
@@ -57,6 +56,4 @@
     </div>
   </div>  
 </div>
-
-
 <br><br><br><br><br><br>

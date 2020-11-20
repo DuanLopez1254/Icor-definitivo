@@ -25,7 +25,6 @@
     <option  name="Id_doc" required><p class="h3">Seleccionar</p></option>
       <option  value="1"><p class="h3">Cedula de ciudadania</p></option> 
       <option value="2"><p class="h3">Cedula de Extranjeria</p></option>
-
     </select>
 </div> <br> 
   <div class="form-group">
@@ -48,5 +47,4 @@
       </div>
     </div>
     </div>
-  </div>      
-
+  </div>

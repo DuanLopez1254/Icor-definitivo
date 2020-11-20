@@ -1,7 +1,5 @@
 <?php
-//Herencia
 class usuario extends Database{
-
     public function all(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM `registro` WHERE id_esta = 1");
@@ -11,7 +9,6 @@ class usuario extends Database{
             die($e->getMessage());
         }
     }
-
     public function alls(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM `registro` WHERE id_esta = 2");
@@ -21,7 +18,6 @@ class usuario extends Database{
             die($e->getMessage());
         }
     }
-
     public function register($data){
         try{
             $result = parent::connect()->prepare("INSERT INTO registro (nombre,apellidos,celular,Id_doc,documento,correo,contrasena) VALUES (?,?,?,?,?,?,?)");
@@ -37,7 +33,6 @@ class usuario extends Database{
            die("Error index->register() " . $e->getMessage());
         }
     }
-
     public function find($id_regis){
         try{
             $result = parent::connect()->prepare("SELECT * FROM registro WHERE id_regis = ?");
@@ -48,7 +43,6 @@ class usuario extends Database{
             die($e->getMessage());
         }
     }
-
     public function update_register($data){
         try{
             $result = parent::connect()->prepare("UPDATE registro SET Nombre = ?, Cantidad = ?, Ubicacion = ?, Id_pro = ? WHERE id_regis = ?");
@@ -62,7 +56,6 @@ class usuario extends Database{
             die("location:?controller=producto" . $e->getMessage());
         }
     }
-
     public function updates_register($datas){
         try{
             $result = parent::connect()->prepare("UPDATE registro SET id_esta = ? WHERE id_regis = ?");
@@ -73,6 +66,4 @@ class usuario extends Database{
            die("location:?controller=usuario " . $e->getMessage());
         }
     }
-
 }
-

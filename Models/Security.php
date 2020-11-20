@@ -1,7 +1,5 @@
 <?php
-
 class Security extends Database{
-
     public function validateLogin($correo){
         try{
             $result = parent::connect()->prepare("SELECT * FROM  registro WHERE correo = ?");
@@ -12,13 +10,10 @@ class Security extends Database{
             die($e->getMessage());
         }
     }
-
     public static function verifyUser(){
         if(! isset($_SESSION['login'])) header('location:?controller=index');
     }
-//
     public function verifyRole($role){
         if(! $role == $_SESSION['login']['Id_cargo']) header('location:?controller=index');
     }
-
 }

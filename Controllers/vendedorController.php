@@ -42,15 +42,21 @@ class vendedorController extends vendedor{
         require_once 'views/factura/regis.php';
         require_once 'views/layouts/footer.php';
     }
-    public function PDF(){         
-        if(isset($_POST['datfac'])){  
-           $conexion=mysqli_connect('localhost','root','','icor');
-           $fac=$_POST['fac'];;
-            $sql_update = mysqli_query($conexion, "UPDATE cod_fac SET Cod='$fac'");
-          if($sql_update){
-          header('Location: views/pdf/Facturas/PDF.php');  
-        }
-     }
+    public function PDF(){        
+        if($_SESSION['login']->Id_cargo == 2 OR 1){
+            if(isset($_POST['datfac'])){  
+                $conexion=mysqli_connect('localhost','root','','icor');
+                $fac=$_POST['fac'];;
+                 $sql_update = mysqli_query($conexion, "UPDATE cod_fac SET Cod='$fac'");
+               if($sql_update){
+               header('Location: views/pdf/Facturas/PDF.php');  
+             }
+          }
+        }else  {
+            require_once 'views/layouts/header.php';
+            require_once 'views/Error404/index.php';
+            require_once 'views/layouts/footer.php';
+        } 
     }
 
     public function Agre(){                
@@ -64,6 +70,8 @@ class vendedorController extends vendedor{
             require_once 'views/layouts/footer.php';
         }
     }
+
+
 
 
     /**

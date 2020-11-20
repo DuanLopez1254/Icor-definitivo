@@ -3,10 +3,8 @@
 <a href="?controller=empleado&method=PDFS"  role="button"><button type="button" class="btn btn-primary btn-lg flex align-left"   data-target="#exampleModal">Descargar</button></a>
 <div class=" text-center mt-5">
 <div class="mt-5">
-
 <br>
 <br>
-
 <p class="display-4 text-center gh" >Lista de empleados liquidados</p>
 <br>
 <table class="table text-center gh">
@@ -48,7 +46,4 @@
 </table>
 </div>
     </div>
-
-
 <br><br><br><br><br><br>
-

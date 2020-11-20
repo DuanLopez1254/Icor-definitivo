@@ -1,16 +1,12 @@
 <?php if($_SESSION['login']->Id_cargo == 2){ ?>
-
 <span class="ir-arriba icon-arrow-up2">Arriba</span>
-
 <div class="lok pt-5 pb-5">
 <div class="container text-center pt-5 pb-2">
 <div class="fd">
 <p  class="display-4 mt-5 mb-5" style="font-family: 'Lexend Deca', sans-serif;"><?= $_SESSION['login']->nombre?> <?= $_SESSION['login']->apellidos?>
 <p>
 <?php
-
 $cargo=$_SESSION['login']->Id_cargo;
-
 if($cargo==1){
   echo'ADMINISTRADOR';
 } else if($cargo==2){
@@ -18,7 +14,6 @@ if($cargo==1){
 }else if($cargo==4){
   echo'CLIENTE';
 }
-
 ?>
 </p>
 </p>
@@ -28,7 +23,6 @@ if($cargo==1){
 </div>
 </div>
 </div>
-
 <div class="container gh d-flex justify-content-center text-center pt-5" style="font-family: 'Lexend Deca', sans-serif;">
 <div class="row">
 <div class="col-md-4  d-flex justify-content-center mb-5">
@@ -45,7 +39,6 @@ if($cargo==1){
 </div>
 </div>
 </div>
-
 <div class="col-md-4  d-flex justify-content-center mb-5">
 <div class="card  align-self-center hgf animation-target1" id="card" style="width: 20rem;">
   <div class="card-body">
@@ -60,7 +53,6 @@ if($cargo==1){
 </div>
 </div>
 </div>
-
 <div class="col-md-4  d-flex justify-content-center mb-5">
 <div class="card  align-self-center hgf  animation-target1" style="width: 20rem;">
   <div class="card-body">
@@ -74,9 +66,6 @@ if($cargo==1){
 </div>
 </div>
 </div>
-
 </div>
 </div>
-
-
 <?php } ?>

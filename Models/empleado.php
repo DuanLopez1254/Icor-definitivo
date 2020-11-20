@@ -1,5 +1,4 @@
 <?php
-//Herencia
 class empleado extends Database{
 
     public function all(){
@@ -11,7 +10,6 @@ class empleado extends Database{
             die($e->getMessage());
         }
     }
-
     public function alls(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM registro where id_esta = 2 and Id_cargo = 3 OR Id_cargo = 2");
@@ -21,7 +19,6 @@ class empleado extends Database{
             die($e->getMessage());
         }
     }
-
     public function register($data){
         try{
             $result = parent::connect()->prepare("INSERT INTO registro (nombre,apellidos,celular,Id_cargo,Id_doc,documento,correo,fecha_in,imagen,contrasena) VALUES (?,?,?,?,?,?,?,?,?,?)");
@@ -40,7 +37,6 @@ class empleado extends Database{
            die("Location:?controller=empleado" . $e->getMessage());
         }
     }
-
     public function find($id_regis){
         try{
             $result = parent::connect()->prepare("SELECT * FROM registro WHERE id_regis = ?");
@@ -51,7 +47,6 @@ class empleado extends Database{
             die($e->getMessage());
         }
     }
-
     public function update_register($data){
         try{
             $result = parent::connect()->prepare("UPDATE registro SET nombre = ?, apellidos = ?, celular = ?, Id_cargo = ?, Id_doc = ?, documento = ?, correo = ?, observacion = ?, fecha_in = ?, fecha_li = ? WHERE id_regis = ?");
@@ -90,6 +85,4 @@ class empleado extends Database{
             die("location:?controller=empleado " . $e->getMessage());
         }
     }
-
 }
-

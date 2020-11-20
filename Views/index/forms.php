@@ -26,7 +26,6 @@
     </div>
   </div>
 </div>
-
 <div class="modal fade" id="Registro" tabindex="-1" role="dialog" style="font-family: 'Lexend Deca', sans-serif;" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal modal-dialog  modal-dialog-centered modal-dialog-scrollable" role="document">
     <div class="modal-content gd">
@@ -57,7 +56,6 @@
     <option  name="Id_doc" required><p class="h3">Seleccionar</p></option>
       <option  value="1"><p class="h3">Cedula de ciudadania</p></option> 
       <option value="2"><p class="h3">Cedula de Extranjeria</p></option>
-
     </select>
 </div> <br> 
   <div class="form-group">
@@ -81,9 +79,6 @@
     </div>
   </div>
 </div>
-
-
-
 <div class="modal fade" id="exampleModalCenter" style="font-family: 'Lexend Deca', sans-serif;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content gd">
@@ -112,9 +107,6 @@
     </div>
   </div>
 </div>
-
-
-
 <div class="modal fade" id="exampleModalInfo" style="font-family: 'Lexend Deca', sans-serif; backdrop-filter: blur(10px);" tabindex="-1" role="dialog"  aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
     <div class="modal-content gh">
@@ -125,7 +117,6 @@
         </button>
       </div>
       <div class="modal-body">
-
       <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Contacto</a>
@@ -135,11 +126,9 @@
 </nav>
 <div class="tab-content pt-3 nosotros" id="nav-tabContent">
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-  
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
   <div class="container">
     <div class="row mt-4 mb-4 "  style="overflow: hidden;">
-    
       <div class="col-md-5 mb-2 clientes wow animated fadeInUp">
       <p class="h5">Numero<br>
       <span CLASS="text-muted">3018765902</span></p><br>
@@ -159,18 +148,13 @@
       <div class="col-md-7 wow animated fadeInUp">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.81847807127!2d-74.1208444857369!3d4.626452443586296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9955dda14b0f%3A0x470d002113a9f277!2sCl.%205a%20%2363-14%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1602708240185!5m2!1ses!2sco" width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
       </div>
-
     </div> 
   </div>  
 </div>
-  
-  
   </div>
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-  
   <div class="container">
    <div class="row mt-4 mb-4s"  style="overflow: hidden;">
-
    <div class="col-md-5 mb-2 clientes wow animated fadeInUp">
    <p class="h4">Nuestra mision es brindar los mejores servicios a nivel de publicidad, con la mejor calidad y sobre todo
    con lo ultimo en diseño, para aseguarar lo mejor para su compañia.</p>
@@ -179,7 +163,6 @@
    <p class="h4">Nuestra mision es brindar los mejores servicios a nivel de publicidad, con la mejor calidad y sobre todo
    con lo ultimo en diseño, para aseguarar lo mejor para su compañia.</p><br>
    </div>
-
    <div class="col-md-7 wow animated fadeInUp">
    <div class="d-flex justify-content-center pl-2 ml-2 mb-4">
    <center>
@@ -191,10 +174,8 @@
   </div>
   </div>
   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-  
   <div class="container">
    <div class="row mt-4 mb-4s" style="overflow: hidden;">
-
    <div class="col-md-5 mb-2 clientes pt-3 wow animated fadeInUp">
    <p class="h4">Nuestra vision es lograr ser una empresa reconocida a nivel nacional e internacioanl en el
      campo de la publicidad, por la calidad de nuestros productos.</p>
@@ -204,7 +185,6 @@
      campo de la publicidad, por la calidad de nuestros productos.
    </p><br>
    </div>
-
    <div class="col-md-7 wow animated fadeInUp">
    <div class="d-flex justify-content-center pl-2 ml-2 mb-4">
    <center>
@@ -216,8 +196,6 @@
   </div>
   </div>
 </div>
-
-
       <div class="modal-footer mt-2 pb-1" style="font-family: 'Lexend Deca', sans-serif;">
         <button type="button"  class="btn btn-danger col-md-12" style="font-family: 'Lexend Deca', sans-serif;" data-dismiss="modal">Cerrar</button>
       </div>
@@ -225,11 +203,6 @@
   </div>
 </div>
 </div>
-
-
-<!-- Modal error en los datos -->
-
-<!-- Modal -->
 <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="error" aria-hidden="true" style="font-family: 'Lexend Deca', sans-serif;">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content gh">
@@ -247,4 +220,3 @@
     </div>
   </div>
 </div>
-

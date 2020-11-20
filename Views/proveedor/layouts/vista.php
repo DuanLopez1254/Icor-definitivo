@@ -2,7 +2,6 @@
 <div class=" row text-center mt-5">
 <div class="col-md-10 mt-5">
 <br>
-
 </div>
 </div>
 <p class="display-4 text-center gh" >Lista de proveedores liquidados</p>

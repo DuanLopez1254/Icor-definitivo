@@ -40,7 +40,6 @@
     </tbody>
 </table>
 </div>
-
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content gh">
@@ -81,7 +80,4 @@
     </div>
   </div>
 </div>
-
 <br><br><br>
-
-

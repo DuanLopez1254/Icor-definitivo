@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="assets/images/icono.png" type="image/x-icon">
     <title>Promotion Factory</title>
@@ -18,7 +16,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-
   </head>
 <body>
 <?php if(!isset($_SESSION['login'])): ?>
@@ -64,12 +61,6 @@
   
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <!--
-                <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Profile</a>
-                <a href="#" class="nav-item nav-link">Messages</a>
-                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
-              -->
             </div>
             <div class="navbar-nav ml-auto " style="font-family: 'Lexend Deca', sans-serif;"><br>
 <?php if(! isset($_SESSION['login'])): ?>
@@ -81,11 +72,9 @@
 <button type="button"  style="font-family: 'Lexend Deca', sans-serif;" class="btn btn-dark my-2 ml-2 my-sm-0" data-toggle="modal" data-target="#exampleModalCenter">
   Iniciar sesion
 </button>
-
 <?php endif; ?>
 <?php if(isset($_SESSION['login'])): ?>
 <?php if($_SESSION['login']->Id_cargo == 1){ ?>
-
             <div class="btn-group">
                     <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sedes
@@ -93,7 +82,6 @@
                     <div class="dropdown-menu dropdown-menu-right">
                       <a href="?controller=contactanos" class="btn btn-info mr-1 ml-1 qwe   " role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
                       <a href="?controller=contactanos&method=vista" class="btn btn-info mr-1 ml-1 qwe" role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desabilitadas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-
                     </div>
                   </div>
             <div class="btn-group">
@@ -103,10 +91,8 @@
                     <div class="dropdown-menu dropdown-menu-right">
                       <a href="?controller=usuario" class="btn btn-secondary mr-1 ml-1 qwe   " role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
                       <a href="?controller=usuario&method=vista" class="btn btn-secondary mr-1 ml-1 qwe" role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inactivos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-
                     </div>
                   </div>
-
                     <div class="btn-group">
           <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Empleados
@@ -114,10 +100,8 @@
           <div class="dropdown-menu dropdown-menu-right">
             <a href="?controller=empleado" class="btn btn-dark mr-1 ml-1 qwe white" role="button">&nbsp;&nbsp;&nbsp;&nbsp;Trabajando&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
             <a href="?controller=empleado&method=vista" class="btn btn-dark mr-1 ml-1 qwe" role="button">&nbsp;&nbsp;&nbsp;&nbsp;Liquidados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-
           </div>
         </div>
-
         <div class="btn-group">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     productos
@@ -125,7 +109,6 @@
                     <div class="dropdown-menu dropdown-menu-right">
                       <a href="?controller=productos" class="btn btn-primary mr-1 ml-1 qwe   " role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disponibles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
                       <a href="?controller=productos&method=vista" class="btn btn-primary mr-1 ml-1 qwe" role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gastados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-
                     </div>
                   </div>
                   <div class="btn-group">
@@ -138,10 +121,8 @@
                     <div class="dropdown-menu jui dropdown-menu-right">
                       <a href="?controller=proveedor" class="btn btn-warning mr-1 ml-1 qwe   text-white" role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disponibles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
                       <a href="?controller=proveedor&method=vista" class="btn btn-warning mr-1 ml-1 qwe text-white" role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Liquidados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-
                     </div>
                   </div>
-
                   <div class="btn-group">
                     <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Inventario
@@ -149,40 +130,31 @@
                     <div class="dropdown-menu dropdown-menu-right">
                       <a href="?controller=inventario" class="btn btn-success mr-1 ml-1 qwe   " role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
                       <a href="?controller=inventario&method=vista" class="btn btn-success mr-1 ml-1 qwe" role="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inexistente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-
                     </div>
                   </div>
-
 <?php } ?>
-
 <?php if($_SESSION['login']->Id_cargo == 2){ ?>
   <div class="btn-group">
               <a class="btn btn-secondary my-2 ml-1 my-sm-0 mr-1 qwe" href="?controller=ventas"  role="button">Facturas</a>   
               <a class="btn btn-secondary my-2 ml-1 my-sm-0 mr-1 qwe" href="?controller=vendedor"  role="button">Generar</a>   
   </div>
 <?php } ?>
-
 <?php if($_SESSION['login']->Id_cargo == 3){ ?>
             <div class="btn-group">
               <a class="btn btn-secondary mr-1 ml-1 qwe" href="?controller=ventas"  role="button">Ordenes</a>   
             </div>
 <?php } ?>
-
 <?php if($_SESSION['login']->Id_cargo == 4){ ?>
             <div class="btn-group">
               <a class="btn btn-secondary mr-1 ml-1 qwe" href="?controller=cliente&method=vista"  role="button">Productos</a>  
               <a class="btn btn-primary mr-1 ml-1 qwe" href="?controller=usuario&method=factura"  role="button">Facturas</a>   
             </div>
 <?php } ?>
-
                 <a class="btn btn-danger my-2 ml-1 my-sm-0 mr-1 qwe" href="?controller=security&method=logout"  role="button">Cerrar sesion</a>
         <?php endif; ?>
-
         <button class="switch my-2 ml-1 my-sm-0 mr-1 text-center mb-2 d-flex justify-content-center d-flex judtify-content-between" id="switch">
 					<span><img loading="lazy" src="assets/images/dark.png" width="70%"></span>
 </button><br>
 </div>
 </div>
-
     </nav>
- 

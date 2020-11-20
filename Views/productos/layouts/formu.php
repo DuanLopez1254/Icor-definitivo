@@ -1,4 +1,3 @@
-
   <div class="form-group">
     <label for="exampleInputEmail1">Nombre del Producto</label>
     <input type="name" name="Nombre" id="Nombre"  class="form-control" aria-describedby="emailHelp"  value="<?= $producto->Nombre ?>">

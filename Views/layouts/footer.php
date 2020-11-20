@@ -6,7 +6,6 @@
 <?php if(isset($_SESSION['error'])){ ?>
 <script>
  $(document).ready(function(){
-  // Show the Modal on load
   $("#error").modal("show");
   setTimeout(function() { $('#error').modal('hide'); }, 4000);
  });
@@ -14,7 +13,6 @@
 <?php
 unset($_SESSION['error']);
 } ?>
-
 <script src="assets/js/java.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -1,15 +1,11 @@
-
 <?php if($_SESSION['login']->Id_cargo == 1){ ?>
-
 <div class="lok pt-5 pb-5">
 <div class="container text-center pt-5 pb-4">
 <div class="fd">
 <p  class="display-4 mt-5 mb-5" style="font-family: 'Lexend Deca', sans-serif;"><?= $_SESSION['login']->nombre?> <?= $_SESSION['login']->apellidos?>
 <p>
 <?php
-
 $cargo=$_SESSION['login']->Id_cargo;
-
 if($cargo==1){
   echo'ADMINISTRADOR';
 } else if($cargo==2){
@@ -17,7 +13,6 @@ if($cargo==1){
 }else if($cargo==4){
   echo'CLIENTE';
 }
-
 ?>
 </p>
 </p>
@@ -30,14 +25,7 @@ if($cargo==1){
 <div  id="coment"  class="mb-5 mt-5 container gh">
 <center>
 <p class="mt-5 mb-5 h1"><b>Comentarios No Publicados</b><p>
-
 <br><br>
-
-
-
-  
-
-
 <div class="container gh d-flex justify-content-center text-center">
 <div class="row">
 <?php foreach(parent::all() as $comen):  ?>
@@ -55,8 +43,6 @@ if($cargo==1){
     <input type="hidden" name="id_esta" value="1">
     <button type="submit" class="btn btn-primary col-md-6 mb-4">Publicar</button>
             </form>
-
-
     </div>
 </div>
 </div>
@@ -69,7 +55,6 @@ if($cargo==1){
 <button id="boton1" type="button" class="btn btn-warning btn-lg w-25 text-white" onclick="document.getElementById('oculto1').style.display = 'none';document.getElementById('boton1').style.display = 'none';document.getElementById('boton2').style.display = 'block';" style="display: none;">Ocultar</button>
 <button id="boton2" type="button" class="btn btn-warning btn-lg w-25 text-white" onclick="document.getElementById('oculto1').style.display = 'block';document.getElementById('boton2').style.display = 'none';document.getElementById('boton1').style.display = 'block';" style="display: block;">Mensajes Publicados</button>
 </div>
-
 <div id="oculto1" class="container pt-4" style="display:none;">
 <div class="row">
 <?php foreach(parent::ale() as $comen):  ?>
@@ -87,7 +72,6 @@ if($cargo==1){
     <input type="hidden" name="id_esta" value="2">
     <button type="submit" class="btn btn-dark col-md-6 mb-4">No Publicar</button>
             </form>
-
 </center>
     </div>
 </div>
@@ -99,11 +83,6 @@ if($cargo==1){
 </div>
 </div>
 <br>
-
-
-
-
-
 <?php } ?>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">

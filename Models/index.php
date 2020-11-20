@@ -1,7 +1,5 @@
 <?php
-//Herencia
 class index extends Database{
-
     public function all(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM comentarios WHERE id_esta = 1
@@ -22,7 +20,6 @@ class index extends Database{
             die($e->getMessage());
         }
     }
-
     public function alls(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM sedes where id_esta = 1 ");
@@ -47,23 +44,23 @@ class index extends Database{
            die("Error index->register() " . $e->getMessage());
         }
     }
-public function registers($data){
-    try{
+    public function registers($data){
+      try{
         $result = parent::connect()->prepare("INSERT INTO comentarios (nombre_usu,comentario) VALUES (?,?)");
         $result->bindParam(1, $data['nombre_usu'], PDO::PARAM_STR);
         $result->bindParam(2, $data['comentario'], PDO::PARAM_STR);
         return $result->execute();
-    }catch (Exception $e){
+      }catch (Exception $e){
        die("Location:?controller=index" . $e->getMessage());
+      }
     }
-}
-public function delete_register($data){
-    try{
+    public function delete_register($data){
+      try{
         $result = parent::connect()->prepare("DELETE FROM comentarios WHERE id = ?");
         $result->bindParam(1, $data['id'], PDO::PARAM_INT);
         return $result->execute();
-    }catch (Exception $e){
+      }catch (Exception $e){
         die("Error index->update_register() " . $e->getMessage());
+      }
     }
-}
 }

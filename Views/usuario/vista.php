@@ -43,7 +43,6 @@
     </tbody>
 </table>
 </div>
-
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -70,7 +69,6 @@
     <option name="Id_doc" required>Seleccionar</option>
       <option  value="1">Cedula de ciudadania</option> 
       <option  value="2">Cedula de Extranjeria</option>
-
     </select>
 </div> <br> 
   <div class="form-group">
@@ -95,4 +93,3 @@
   </div>
 </div>
 <br><br><br><br><br><br>
-

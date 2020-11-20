@@ -2,7 +2,6 @@
 <div class=" row text-center mt-5">
 <div class="col-md-10">
 <br>
-
 </div>
 </div>
 <p class="display-4 text-center gh mt-5">Lista de productos agotados</p>
@@ -38,7 +37,6 @@
     </tbody>
 </table>
 </div>
-
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -76,4 +74,3 @@
   </div>
 </div>
 <br><br><br><br><br><br>
-

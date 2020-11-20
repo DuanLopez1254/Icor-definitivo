@@ -1,7 +1,5 @@
 <?php
-//Herencia
 class ventas extends Database{
-
     public function all(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM factura");
@@ -11,7 +9,6 @@ class ventas extends Database{
             die($e->getMessage());
         }
     }
-
     public function register($data){
         try{
             $result = parent::connect()->prepare("INSERT INTO factura (Nombre_producto,cantidad_producto,Precio_producto,Id_producto,Fecha,Sub_total,Total,id_regis,nombre,documento) VALUES (?,?,?,?,?,?,?,?,?,?)");
@@ -25,13 +22,11 @@ class ventas extends Database{
             $result->bindParam(8, $data['id_regis'], PDO::PARAM_INT);
             $result->bindParam(9, $data['nombre'], PDO::PARAM_STR);
             $result->bindParam(10, $data['documento'], PDO::PARAM_INT);
-            
             return $result->execute();
         }catch (Exception $e){
            die("Location:?controller=ventas" . $e->getMessage());
         }
     }
-
     public function find($Id_factura){
         try{
             $result = parent::connect()->prepare("SELECT * FROM factura WHERE Id_factura = ?");
@@ -42,7 +37,6 @@ class ventas extends Database{
             die($e->getMessage());
         }
     }
-
     public function update_register($data){
         try{
             $result = parent::connect()->prepare("UPDATE factura SET Nombre_producto = ?, cantidad_producto = ?, Precio_producto  = ?, Id_producto = ?, Fecha = ?, Sub_total = ?, Total = ?, id_regis = ?, nombre = ?, documento = ? WHERE Id_factura = ?");
@@ -57,7 +51,6 @@ class ventas extends Database{
             $result->bindParam(9, $data['nombre'], PDO::PARAM_STR);
             $result->bindParam(10, $data['documento'], PDO::PARAM_INT);
             $result->bindParam(11, $data['Id_factura'], PDO::PARAM_INT);
-
             return $result->execute();
         }catch (Exception $e){
             die("location:?controller=ventas" . $e->getMessage());
@@ -73,4 +66,3 @@ class ventas extends Database{
         }
     }
 }
-

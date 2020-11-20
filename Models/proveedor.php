@@ -1,7 +1,5 @@
 <?php
-//Herencia
 class proveedor extends Database{
-
     public function all(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM registro where id_esta = 1 and Id_cargo = 5");
@@ -20,7 +18,6 @@ class proveedor extends Database{
             die($e->getMessage());
         }
     }
-
     public function register($data){
         try{
             $result = parent::connect()->prepare("INSERT INTO registro (nombre,direccion,Id_cargo,celular,fecha_in,imagen,contrasena) VALUES (?,?,?,?,?,?,?)");
@@ -36,7 +33,6 @@ class proveedor extends Database{
            die("Location:?controller=proveedor" . $e->getMessage());
         }
     }
-
     public function find($id_regis){
         try{
             $result = parent::connect()->prepare("SELECT * FROM registro WHERE id_regis = ?");
@@ -47,7 +43,6 @@ class proveedor extends Database{
             die($e->getMessage());
         }
     }
-
     public function update_register($data){
         try{
             $result = parent::connect()->prepare("UPDATE registro SET nombre = ?, direccion = ?, celular = ?, fecha_in = ?, fecha_li= ?, observacion = ? WHERE id_regis = ?");
@@ -78,14 +73,4 @@ class proveedor extends Database{
             die("location:?controller=proveedor" . $e->getMessage());
         }
     }
-  //  public function delete_register($data){
-    //    try{
-      //      $result = parent::connect()->prepare("DELETE FROM provedor WHERE Id_pro = ?");
-        //    $result->bindParam(1, $data['Id_pro'], PDO::PARAM_INT);
-          //  return $result->execute();
-      //  }catch (Exception $e){
-       //     die("location:?controller=proveedor " . $e->getMessage());
-        //}
-   // }
 }
-

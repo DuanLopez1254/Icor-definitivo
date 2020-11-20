@@ -64,11 +64,7 @@ $conexion=mysqli_connect('localhost','root','','icor');
  <?php 
 $total=0;
 } ?>
-<!-- modal -->
 <br>
 </div>
-
 <?php
-
 ?>
-

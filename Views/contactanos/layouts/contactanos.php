@@ -1,5 +1,4 @@
 <span class="ir-arriba icon-arrow-up2">Arriba</span>
-
 <div class="lok pt-5 pb-5">
 <div class="container text-center pt-5 pb-2">
 <div class="fd">
@@ -14,8 +13,6 @@ para puntos de venta, caracterizándonos por generar soluciones innovadoras, rea
 </div>
 </div>
 </div>
-
-
 <div class="container d-flex justify-content-center text-center pt-5" style="font-family: 'Lexend Deca', sans-serif;">
 <div class="row">
 <div class="col-md-4  d-flex justify-content-center mb-5">
@@ -32,7 +29,6 @@ para puntos de venta, caracterizándonos por generar soluciones innovadoras, rea
 </div>
 </div>
 </div>
-
 <div class="col-md-4  d-flex justify-content-center mb-5">
 <div class="card  align-self-center hgf animation-target1" id="card" style="width: 20rem;">
   <div class="card-body">
@@ -47,7 +43,6 @@ para puntos de venta, caracterizándonos por generar soluciones innovadoras, rea
 </div>
 </div>
 </div>
-
 <div class="col-md-4  d-flex justify-content-center mb-5">
 <div class="card  align-self-center hgf  animation-target1" style="width: 20rem;">
   <div class="card-body">
@@ -61,10 +56,8 @@ para puntos de venta, caracterizándonos por generar soluciones innovadoras, rea
 </div>
 </div>
 </div>
-
 </div>
 </div>
-
 <div class="container mt-5 mb-4">
 <div class=" row text-center">
 <div class="col-md-10">
@@ -87,7 +80,6 @@ para puntos de venta, caracterizándonos por generar soluciones innovadoras, rea
             <td><?= $contactanos->Direccion?></td>
             <td><?= $contactanos->Telefono?></td>
             <td><?= $contactanos->Ciudad?></td>
-
             <td><img width="100" height="100" src="<?= $contactanos->imagen ?>" alt=""></td>
             <td></td> <td></td>
     <?php endforeach; ?>

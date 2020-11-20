@@ -1,16 +1,5 @@
 <?php
-//Herencia
 class comen extends Database{
-
-/// public function alls(){
-  //      try{
-    //        $result = parent::connect()->prepare("SELECT * FROM publicaciones  ORDER BY id DESC");
-      //      $result->execute();
-        //    return $result->fetchAll();
-        //}catch(Exception $e){
-         //   die($e->getMessage());
-       /// }
-    ///}
     public function all(){
         try{
             $result = parent::connect()->prepare("SELECT * FROM comentarios ORDER BY id_co DESC LIMIT 6");
@@ -29,7 +18,6 @@ class comen extends Database{
             die($e->getMessage());
         }
     }
-
     public function registers($data){
         try{
             $result = parent::connect()->prepare("INSERT INTO comentario (nombre_usu,comentario) VALUES (?,?)");
@@ -40,7 +28,6 @@ class comen extends Database{
            die("Location:?controller=index" . $e->getMessage());
         }
     }
-
     public function find($id_co){
         try{
             $result = parent::connect()->prepare("SELECT * FROM comentarios WHERE id_co = ?");
@@ -50,8 +37,7 @@ class comen extends Database{
         }catch(Exception $e){
             die($e->getMessage());
         }
-    }
-    
+    }  
     public function update_register($data){
         try{
             $result = parent::connect()->prepare("UPDATE comentarios SET respuesta = ? WHERE id_co = ?");
@@ -82,4 +68,3 @@ class comen extends Database{
        }
  }
 }
-

@@ -9,33 +9,18 @@
 </form>
 </div>
 </div>
-
-
 <?php
 if(isset($_POST['datfac']))
 {  
-
     $conexion=mysqli_connect('localhost','root','','icor');
     $cli=$_POST['cli'];;
-    
    $resultado = mysqli_query($conexion,"Select * from registro where documento = '$cli' and id_cargo = '4'");
-
-
-   if($resultado) {
-        
+   if($resultado) {  
       $result2=mysqli_fetch_array($resultado);
-
      if($result2['documento'] == $cli){
-      
-
-  
       $sql="SELECT * from registro where documento = '$cli'";
       $result1=mysqli_query($conexion,$sql);
-  
-
       $mostrar=mysqli_fetch_array($result1);
-  
-
       $facd=$mostrar['documento'];
       $num1=date("Ymd");
       $num=mt_rand(0,100000);
@@ -44,24 +29,19 @@ if(isset($_POST['datfac']))
       $Apellido=$mostrar['apellidos'];
       $Documento=$mostrar['documento'];
       $total="0";
-
       if(!isset($nombre)){
       $result = mysqli_query($conexion,"insert into factura VALUES (NULL, $fac, '$Nombre', '$Apellido', '$Documento', '$total')");
       }
- 
      if($result){
      $_SESSION['Codigo_fac'] = $fac;
      header('location:?controller=vendedor&method=fac');
      }else{
      echo"pemdejo";
     }
-
-
 }else{
   header('Location: ?controller=vendedor&method=regis');
 }
    }
 }
-
 ?>
 <br><br><br><br><br><br><br><br><br><br>

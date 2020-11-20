@@ -18,6 +18,4 @@
   <div class="form-group">
     <label for="exampleInputPassword1">Observacion</label>
     <textarea type="text" name="observacion" id="observacion"   class="form-control"  ><?= $inventario->observacion ?></textarea>
-  </div>
-
-      
+  </div>      

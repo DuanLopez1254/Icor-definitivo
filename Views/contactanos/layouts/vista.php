@@ -2,12 +2,10 @@
 <div class=" row text-center mt-5">
 <div class="gh mt-5 text-center">
 <br>
-
 </div>
 </div>
 <p class="display-4 text-center mt-5 " >Lista de sedes inavilitadas</p>
 <br>
-
 <br>
 <table class="table gh text-center">
     <thead>
@@ -38,8 +36,4 @@
     </tbody>
 </table>
 </div>
-
-
-
 <br><br><br><br><br><br>
-

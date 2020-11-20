@@ -18,7 +18,6 @@ $conexion=mysqli_connect('localhost','root','','icor');
 Nombre: <?php echo $mostrar['Nombre_cli'] ?> 
 <?php echo $mostrar['Apellido_cli'] ?></p>
 <p class="h3 text-muted">Documento: <?php echo $mostrar['Documento'] ?></p>
-
 <?php $doc=$mostrar['Documento']; ?>
 </div>
 </div>
@@ -43,7 +42,6 @@ Nombre: <?php echo $mostrar['Nombre_cli'] ?>
 $algo=0;
     while($mostrar3=mysqli_fetch_array($result3)){
      ?>
-     
     <tr>
       <th scope="row"><?php echo $mostrar3['Cantidad'] ?></th>
       <td><?php echo $mostrar3['Nombre'] ?></td>
@@ -57,7 +55,6 @@ $algo=0;
       </form>
       </td>
     </tr>
-
     <?php $algo=$algo+1;
   } ?>  
   </tbody>
@@ -71,7 +68,6 @@ $algo=0;
 <p class="h3">$<?php echo number_format($total, 0, '.', '.'); ?></p>
 </div>
 </div>
-<!-- modal -->
 <br>
 <form method="post" action="?controller=vendedor&method=Agre">
   <div class="form-group">
@@ -92,7 +88,4 @@ $algo=0;
 </form>
 </div>
     <?php  } ?>
-
-
-
 <br><br><br><br>

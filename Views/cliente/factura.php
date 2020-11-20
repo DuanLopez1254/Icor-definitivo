@@ -41,7 +41,6 @@ $id=$_SESSION['login']->documento;
   <?php
     $sql="SELECT * from productos_fac where fac = '$fac'";
     $result3=mysqli_query($conexion,$sql);
-
     while($mostrar3=mysqli_fetch_array($result3)){
      ?>
     <tr>    
@@ -66,7 +65,5 @@ $id=$_SESSION['login']->documento;
  <?php 
 $total=0;
 } ?>
-<!-- modal -->
 <br>
 </div>
-
